@@ -1,0 +1,56 @@
+:root {
+  --cor-mensagem-sucesso: green;
+  --cor-mensagem-falha: red;
+  --cor-mensagem-neutro: grey;
+  --cor-bordas: black;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.teste {
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--cor-bordas);
+  border-radius: 15px;
+  width: 90%;
+  gap: 10px;
+
+  .resultado {
+    padding-left: 10px;
+    width: 40px;
+  }
+
+  .sucesso {
+    fill: var(--cor-mensagem-sucesso);
+  }
+  .falha {
+    fill: var(--cor-mensagem-falha);
+  }
+  .neutro {
+    fill: var(--cor-mensagem-neutro);
+  }
+}
+
+.detalhes {
+  display: flex;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+
+  .tempo {
+    position: absolute;
+    right: 20px;
+  }
+
+  .info {
+    width: 25px;
+    fill: grey;
+  }
+
+}
